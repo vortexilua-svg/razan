@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andhika Razan | Edukasi & Teknologi</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #080b12;
+      color: #f1f5f9;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #101622;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #24344a;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h2 {
+      color: #55e6ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #55e6ff;
+    }
+
+    .hero {
+      min-height: 80vh;
+      padding: 100px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 48px;
+      background: radial-gradient(
+        circle at top right, #172b46, #080b12 60%
+      );
+    }
+
+    .hero-content {
+      flex: 1;
+      max-width: 750px;
+    }
+
+    .hero-photo {
+      width: min(32vw, 360px);
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center top;
+      border: 1px solid #55e6ff66;
+      border-radius: 24px;
+      box-shadow: 0 24px 70px #0008, 0 0 35px #55e6ff18;
+    }
+
+    .label {
+      color: #55e6ff;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.15;
+      margin: 20px 0;
+    }
+
+    .highlight {
+      color: #55e6ff;
+    }
+
+    .hero p {
+      color: #aab6c8;
+      max-width: 600px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #55e6ff;
+      color: #080b12;
+      padding: 12px 22px;
+      margin-top: 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #aab6c8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #101622;
+      border: 1px solid #253247;
+      padding: 25px;
+      border-radius: 14px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #55e6ff;
+      box-shadow: 0 10px 30px #55e6ff12;
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #55e6ff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #aab6c8;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #0d121c;
+      border-top: 1px solid #253247;
+      border-bottom: 1px solid #253247;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-content p {
+      color: #aab6c8;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #8b9bb0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 750px) {
+      header {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0;
+      }
+
+      .hero {
+        padding: 75px 6%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+      }
+
+      .hero-photo {
+        width: min(100%, 320px);
+        align-self: center;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGASI -->
+  <header>
+    <h2>ANDHIKA<span class="highlight">.</span>RAZAN</h2>
+
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#edukasi">Edukasi</a>
+      <a href="#teknologi">Teknologi</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+  </header>
+
+  <!-- HALAMAN UTAMA -->
+  <section class="hero" id="beranda">
+    <div class="hero-content">
+      <div class="label">RUANG BELAJAR DIGITAL</div>
+
+      <h1>
+        Jelajahi Ilmu,<br>
+        <span class="highlight">Ciptakan Masa Depan.</span>
+      </h1>
+
+      <p>
+        Selamat datang di Andhika Razan!
+        Website yang menyediakan informasi edukasi,
+        teknologi, sains, dan pengetahuan umum
+        untuk menambah wawasan dan inspirasi.
+      </p>
+
+      <a href="#edukasi" class="button">
+        Mulai Belajar →
+      </a>
+    </div>
+    <img
+      class="hero-photo"
+      src="razan.jpeg"
+      alt="Andhika Razan"
+    >
+  </section>
+
+  <!-- EDUKASI -->
+  <section id="edukasi">
+    <div class="section-title">
+      <h2>Edukasi 📚</h2>
+      <p>Belajar hal baru untuk masa depan yang lebih baik.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="icon">📖</div>
+        <h3>Tips Belajar</h3>
+        <p>
+          Pelajari cara mengatur waktu, meningkatkan fokus,
+          dan memahami materi sekolah secara efektif.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🧠</div>
+        <h3>Pengetahuan Umum</h3>
+        <p>
+          Temukan fakta menarik tentang dunia, sejarah,
+          alam, sains, dan kehidupan sehari-hari.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎯</div>
+        <h3>Pengembangan Diri</h3>
+        <p>
+          Tingkatkan kedisiplinan, kreativitas,
+          kemampuan berpikir kritis, dan rasa percaya diri.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- TEKNOLOGI -->
+  <section id="teknologi">
+    <div class="section-title">
+      <h2>Teknologi 🚀</h2>
+      <p>Mengenal inovasi yang mengubah kehidupan manusia.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="icon">🤖</div>
+        <h3>Kecerdasan Buatan</h3>
+        <p>
+          Kenali Artificial Intelligence (AI), cara kerjanya,
+          manfaatnya, dan penggunaannya dalam kehidupan.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">💻</div>
+        <h3>Dunia Coding</h3>
+        <p>
+          Belajar dasar HTML, CSS, JavaScript, dan cara
+          membuat website sendiri dari nol.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🔐</div>
+        <h3>Keamanan Digital</h3>
+        <p>
+          Pelajari cara melindungi akun, menjaga privasi,
+          dan menghindari penipuan di internet.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="about" id="tentang">
+    <div class="about-content">
+      <div class="label">TENTANG KAMI</div>
+
+      <h2>Pengetahuan Tanpa Batas</h2>
+
+      <p>
+        Andhika Razan adalah website edukasi dan teknologi
+        yang bertujuan membantu pengunjung menambah
+        pengetahuan, mengenal perkembangan digital,
+        serta mengembangkan kemampuan diri.
+      </p>
+
+      <p>
+        Terus belajar, terus berkembang,
+        dan gunakan teknologi untuk hal positif.
+      </p>
+
+      <a href="#beranda" class="button">
+        Kembali ke Atas ↑
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © <span id="tahun"></span> Andhika Razan.
+      Belajar • Berkembang • Berkarya.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("tahun").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
